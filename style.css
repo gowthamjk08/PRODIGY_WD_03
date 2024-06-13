@@ -1,0 +1,51 @@
+body {
+  background-color: rgba(15, 131, 131, 0.414);
+  color: #400404;
+  text-align: center;
+  font-size: larger;
+  font-family: monospace;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin-bottom: 20px;
+  width: fit-content; /* changed to fit-content */
+  margin: 0 auto; /* centered the board */
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.message {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: rgba(88, 244, 80, 0.926);
+  color: rgb(0, 0, 0);
+  margin: 20px;
+  padding: 10px 20px; /* adjusted padding */
+  border-radius: 20px;
+  font-size: medium;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(22, 228, 67, 0.607);
+  color: #ffffffe0;
+}
